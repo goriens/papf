@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-color: red;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center button{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.popup{
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 700px;
+    height: auto;
+    background: #fff;
+    transition: top 0ms ease-in-out 200ms,
+    opacity 200ms ease-in-out 0ms,
+    transform 20ms ease-in-out 0ms;
+}
+.popup.active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+    opacity 200ms ease-in-out 0ms,
+    transform 20ms ease-in-out 0ms;
+}
+.popup .close-btn{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
+}
+.form{
+    display: flex;
+}
+.form img{
+    width: 100%;
+    height: auto;
+}
+.pop-box1{
+    width: 45%;
+    background-color: #e75a16;
+
+}
+.pop-box2{
+    width:55%;
+    padding: 0px 40px;
+    /*border: 2px solid black;*/
+}
+.user-id{
+    position: relative;
+    left:10px;
+    top:25px;
+    /*padding:10px 20px;*/
+    
+}
+.user-id input{
+    width:100%;
+    /*border-bottom: 5px solid blue;*/
+    height: 40px;
+   
+    
+}
+.user-data input {
+    border:none;
+    border-bottom:1px solid gray;
+    outline:none;
+    background:none;
+    transition: 0.5s;
+    margin-bottom:20px;
+    color: gray;
+    font-size: 17px;
+}
+.user-data label{
+    color:rgb(99, 97, 97);
+    padding: 22px 0px;
+    position: absolute;
+    left: 0;
+    font-size:15px;
+    pointer-events: none;
+    transition:0.5s;
+    
+}
+.user-data input:focus ~ label,
+.user-data input:valid ~ label{
+    top:-30px;
+    font-size:16px;
+    font-weight: bold;
+    color: gray;
+}
+.user-data input:focus{
+    border-bottom:3px solid #e75a16;
+}
+#verify{
+    display: flex;
+    font-size: 12px;
+}
+#otp{
+    color: gray;
+    margin: 24px 0px 0px 40px ;
+    color: #e75a16;
+}
+#sign-btn, #login-btn{
+    width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    height: 50px;
+    background-color: #e75a16;
+    color: #fff;
+    border: 0px;
+    margin: 30px 10px;
+}
+#terms{
+    font-size: 12px;
+    text-align: center;
+    margin: 20px;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    font-size: 13px;
+    color: gray;
+}
+.social>div:nth-child(1){
+    margin-top: 10px;
+}
+.social img{
+    width: 30px;
+}
+#login , #signup{
+    color: #e75a16;
+    text-align: center;
+    margin: 8px;
+}
+#forgot{
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom:170px ;
+}
+#forgot > a{
+    color: #e75a16;
+}
+hr{
+    border: none;
+    border-top: 1px solid rgb(209, 206, 206);
+}

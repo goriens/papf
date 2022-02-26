@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="signup-style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="center">
+    <button id="show-login">Icon</button>
+  </div>
+  <div class="popup">
+    <div class="close-btn">&times;</div>
+    <div class="form">
+      <div class="pop-box1">
+        <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Web_IMG_17Dec_09022022.jpg" alt="">
+      </div>
+      <div class="pop-box2">
+        <div class="user-id user-data">
+          <input type="text" name="" id="name" required=""/>
+          <label>Name</label>
+        </div>
+        <div class="user-id user-data" id="verify">
+          <div>
+            <input type="text" name="" id="number" required=""/>
+          <label>Mobile Number</label> 
+          </div>
+          <div id="otp">
+            VERIFY WITH OTP
+          </div>   
+        </div>
+        <div class="user-id user-data">
+          <input type="email" name="" id="email" required=""/>
+          <label>Email ID</label>
+        </div>
+        <div class="user-id user-data">
+          <input type="password" name="" id="password" required=""/>
+          <label>Password</label>
+        </div>
+
+        <button id="sign-btn" onclick="userDataBase()" onclick="loginFun()">Register</button>
+        <p id="terms">
+          By registering you agree to our <a href="#">Terms & conditions </a>
+        </p>
+        <hr>
+        <p id="login" onclick="loginFun()">Existing User? Login</p>
+        <hr>
+        <div class="social">
+          <div>OR Continue with</div>
+          <div><img src="https://ii1.pepperfry.com/images/social_login_fb_2x.png" alt=""></div>
+          <div><img src="https://ii1.pepperfry.com/images/social_login_google_2x.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="signup-script.js"></script>
+</html>
